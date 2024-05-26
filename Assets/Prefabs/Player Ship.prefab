@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 479061986713204579}
   - component: {fileID: 1050890731071340268}
+  - component: {fileID: 6859224856088148645}
+  - component: {fileID: 415731008802037833}
+  - component: {fileID: 1162119019988728822}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -75,10 +78,74 @@ MonoBehaviour:
   controlSpeed: 30
   xRange: 15
   yRange: 10
+  lasers:
+  - {fileID: 591810002218045755}
+  - {fileID: 5171563021527972574}
   positionPitchFactor: -2
-  controlPitchFactor: -15
   positionYawFactor: 2
+  controlPitchFactor: -15
   controlRollFactor: -20
+--- !u!114 &6859224856088148645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89410944785266881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc24b442b5e023459b9393c41f4d2a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadDelay: 0.5
+--- !u!54 &415731008802037833
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89410944785266881}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1162119019988728822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89410944785266881}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14, y: 3.5, z: 11}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &447878830123462366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152,7 +219,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5731010267658197747, guid: bb0dcfc33256099499beab1781b0d40a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb0dcfc33256099499beab1781b0d40a, type: 3}
@@ -234,7 +302,8 @@ PrefabInstance:
       value: StarSparrow_Thruster_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8479866072220628606, guid: 81904476cad566346b1f6a2cc9299080, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81904476cad566346b1f6a2cc9299080, type: 3}
@@ -316,7 +385,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7964297377303133473, guid: 5fcee70427c45b0479f21b97546e2dc2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fcee70427c45b0479f21b97546e2dc2, type: 3}
@@ -386,7 +456,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3059298107966278239, guid: 30e7e44d738e12b4d90219afe4380ab9, type: 3}
+    - {fileID: 3059298108949483893, guid: 30e7e44d738e12b4d90219afe4380ab9, type: 3}
+    - {fileID: 3059298109316417541, guid: 30e7e44d738e12b4d90219afe4380ab9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30e7e44d738e12b4d90219afe4380ab9, type: 3}
@@ -456,7 +529,8 @@ PrefabInstance:
       value: StarSparrow_Wing_2_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1387370123835451894, guid: f3f694fddb9ec5649ba658551ea3d4d1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3f694fddb9ec5649ba658551ea3d4d1, type: 3}
@@ -526,7 +600,8 @@ PrefabInstance:
       value: StarSparrow_Engine_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7662387033034539553, guid: 747c4056d416c6d43a299c4473100fed, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 747c4056d416c6d43a299c4473100fed, type: 3}
@@ -608,7 +683,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5731010267658197747, guid: bb0dcfc33256099499beab1781b0d40a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb0dcfc33256099499beab1781b0d40a, type: 3}
@@ -690,7 +766,8 @@ PrefabInstance:
       value: StarSparrow_Wing_2_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1387370123835451894, guid: f3f694fddb9ec5649ba658551ea3d4d1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3f694fddb9ec5649ba658551ea3d4d1, type: 3}
@@ -760,7 +837,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2523791296914677296, guid: 76fb7025f7e56934580f6fcb647b40b5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76fb7025f7e56934580f6fcb647b40b5, type: 3}
@@ -842,7 +920,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7964297377303133473, guid: 5fcee70427c45b0479f21b97546e2dc2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fcee70427c45b0479f21b97546e2dc2, type: 3}
@@ -924,7 +1003,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4271469254158632957, guid: d020278fb783dd043828dd2b012bf982, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d020278fb783dd043828dd2b012bf982, type: 3}
@@ -1006,7 +1086,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7964297377303133473, guid: 5fcee70427c45b0479f21b97546e2dc2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fcee70427c45b0479f21b97546e2dc2, type: 3}
@@ -1076,7 +1157,10 @@ PrefabInstance:
       value: StarSparrow_Core_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4751674109106078468, guid: 7e94bae2054e32b4e8b58927770cd38a, type: 3}
+    - {fileID: 4751674109127380221, guid: 7e94bae2054e32b4e8b58927770cd38a, type: 3}
+    - {fileID: 4751674108871726446, guid: 7e94bae2054e32b4e8b58927770cd38a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e94bae2054e32b4e8b58927770cd38a, type: 3}
@@ -1158,7 +1242,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7964297377303133473, guid: 5fcee70427c45b0479f21b97546e2dc2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fcee70427c45b0479f21b97546e2dc2, type: 3}
@@ -1228,7 +1313,8 @@ PrefabInstance:
       value: StarSparrow_Engine_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7662387033034539553, guid: 747c4056d416c6d43a299c4473100fed, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 747c4056d416c6d43a299c4473100fed, type: 3}
@@ -1299,6 +1385,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 917244487916911294, guid: 948d5bbb2966d084984aa9dabf505a48, type: 3}
   m_PrefabInstance: {fileID: 4609885545968524906}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5171563021527972574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8663957357603136692, guid: 948d5bbb2966d084984aa9dabf505a48, type: 3}
+  m_PrefabInstance: {fileID: 4609885545968524906}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4974425034266727288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1364,7 +1455,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4271469254158632957, guid: d020278fb783dd043828dd2b012bf982, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d020278fb783dd043828dd2b012bf982, type: 3}
@@ -1446,7 +1538,8 @@ PrefabInstance:
       value: StarSparrow_Wing_2_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1387370123835451894, guid: f3f694fddb9ec5649ba658551ea3d4d1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3f694fddb9ec5649ba658551ea3d4d1, type: 3}
@@ -1520,7 +1613,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4874325872208560191, guid: ead3ebac099823941bb3128d6fd11249, type: 3}
+    - {fileID: 4874325873208598204, guid: ead3ebac099823941bb3128d6fd11249, type: 3}
+    - {fileID: 4874325872341346116, guid: ead3ebac099823941bb3128d6fd11249, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ead3ebac099823941bb3128d6fd11249, type: 3}
@@ -1602,7 +1698,8 @@ PrefabInstance:
       value: StarSparrow_Thruster_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8479866072220628606, guid: 81904476cad566346b1f6a2cc9299080, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81904476cad566346b1f6a2cc9299080, type: 3}
@@ -1684,7 +1781,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4271469254158632957, guid: d020278fb783dd043828dd2b012bf982, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d020278fb783dd043828dd2b012bf982, type: 3}
@@ -1766,7 +1864,8 @@ PrefabInstance:
       value: StarSparrow_Thruster_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8479866072220628606, guid: 81904476cad566346b1f6a2cc9299080, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81904476cad566346b1f6a2cc9299080, type: 3}
@@ -1848,7 +1947,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5731010267658197747, guid: bb0dcfc33256099499beab1781b0d40a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb0dcfc33256099499beab1781b0d40a, type: 3}
@@ -1914,6 +2014,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948d5bbb2966d084984aa9dabf505a48, type: 3}
+--- !u!1 &591810002218045755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8663957357603136692, guid: 948d5bbb2966d084984aa9dabf505a48, type: 3}
+  m_PrefabInstance: {fileID: 8073273389129397647}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8984877378095484721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 917244487916911294, guid: 948d5bbb2966d084984aa9dabf505a48, type: 3}
@@ -1980,7 +2085,8 @@ PrefabInstance:
       value: StarSparrow_Wing_2_LP_Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1387370123835451894, guid: f3f694fddb9ec5649ba658551ea3d4d1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3f694fddb9ec5649ba658551ea3d4d1, type: 3}
@@ -2062,7 +2168,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5731010267658197747, guid: bb0dcfc33256099499beab1781b0d40a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb0dcfc33256099499beab1781b0d40a, type: 3}
@@ -2132,7 +2239,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2523791296914677296, guid: 76fb7025f7e56934580f6fcb647b40b5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76fb7025f7e56934580f6fcb647b40b5, type: 3}
@@ -2202,7 +2310,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4271469254158632957, guid: d020278fb783dd043828dd2b012bf982, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d020278fb783dd043828dd2b012bf982, type: 3}

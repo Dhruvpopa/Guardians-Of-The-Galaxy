@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &132244095 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4502949914359196277, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
-  m_PrefabInstance: {fileID: 864879240850400850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &294609934
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +241,7 @@ Transform:
   m_GameObject: {fileID: 482851559}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.75025, y: 115.47644, z: 118.21804}
+  m_LocalPosition: {x: 87.6, y: 106.7, z: 118.21804}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -367,11 +362,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &709897958 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8182526173314793872, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
-  m_PrefabInstance: {fileID: 864879240850400850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &773017335 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8407485657882268400, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
@@ -390,6 +380,7 @@ GameObject:
   - component: {fileID: 1634213609}
   - component: {fileID: 1634213608}
   - component: {fileID: 1634213607}
+  - component: {fileID: 1634213612}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -504,6 +495,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1634213612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634213606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d052553e1173c0440ae2cb6b0df32ee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &864879240850400850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -556,18 +559,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
-    - target: {fileID: 8587563706873343559, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587563706873343559, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 709897958}
-    - target: {fileID: 8587563706873343559, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 132244095}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
