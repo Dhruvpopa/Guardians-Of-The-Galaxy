@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &132244095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4502949914359196277, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
+  m_PrefabInstance: {fileID: 864879240850400850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &294609934
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +367,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &709897958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8182526173314793872, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
+  m_PrefabInstance: {fileID: 864879240850400850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &773017335 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8407485657882268400, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
@@ -546,6 +556,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 8587563706873343559, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587563706873343559, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 709897958}
+    - target: {fileID: 8587563706873343559, guid: 56c78816d074a0a4c8269c2e9a1650c8, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 132244095}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
