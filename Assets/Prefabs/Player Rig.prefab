@@ -81,13 +81,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8608697055815156509}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
-  m_LocalPosition: {x: 0, y: 1, z: -19}
+  m_LocalRotation: {x: 0.036343455, y: -0, z: -0, w: 0.9993394}
+  m_LocalPosition: {x: 0, y: 1.11, z: -19.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1620083644512667670}
-  m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 4.166, y: 0, z: 0}
 --- !u!20 &1091925244704931435
 Camera:
   m_ObjectHideFlags: 0
@@ -199,61 +199,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1050890731071340268, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1050890731071340268, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 8182526173314793872}
-    - target: {fileID: 1050890731071340268, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 4502949914359196277}
-    - target: {fileID: 2402590487519246523, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2402590487519246523, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2402590487519246523, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3733380733132063327, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.33676746
-      objectReference: {fileID: 0}
-    - target: {fileID: 3733380733132063327, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.85969967
-      objectReference: {fileID: 0}
-    - target: {fileID: 3733380733132063327, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.8792453
-      objectReference: {fileID: 0}
-    - target: {fileID: 6183878799029495473, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-      propertyPath: m_Name
-      value: Laser Right
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
---- !u!1 &4502949914359196277 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5171563021527972574, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-  m_PrefabInstance: {fileID: 8770940852336398507}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8182526173314793872 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 591810002218045755, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
-  m_PrefabInstance: {fileID: 8770940852336398507}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9159578830398547912 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479061986713204579, guid: 3c564b63264975d42b14d5579d6e3407, type: 3}
