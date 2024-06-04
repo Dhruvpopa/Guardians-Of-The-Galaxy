@@ -434,10 +434,12 @@ PlayableDirector:
     value: {fileID: 773017335}
   m_ExposedReferences:
     m_References:
+    - 41cfad7fcdc2d5c489209664b37d3227: {fileID: 1121425277}
     - 8f388704100c8f54e93f8c1a9c0a3d4a: {fileID: 87955497}
     - cf2e4ed3feb71234cb498d9f551b42f8: {fileID: 936932726}
     - 9ed83407d14b62e42b2efd64eef1cb20: {fileID: 0}
     - 973b0c087d194c946827f37bb65aac5b: {fileID: 1898177386}
+    - cd74f20f251439d4fabbad33efc72ee4: {fileID: 1121425277}
     - 61073fe011a5de244aa34d731cfabf61: {fileID: 1570230061}
 --- !u!1001 &545147145
 PrefabInstance:
@@ -1022,6 +1024,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1121425277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2616545803363140319, guid: b922aef64f644f54fbc640574fba0d77, type: 3}
+  m_PrefabInstance: {fileID: 213126470830263282}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1570230061
 GameObject:
   m_ObjectHideFlags: 0
