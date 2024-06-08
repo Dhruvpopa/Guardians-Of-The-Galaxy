@@ -552,6 +552,7 @@ GameObject:
   - component: {fileID: 7996131102763681703}
   - component: {fileID: 2527439875764300654}
   - component: {fileID: 2859457405362064726}
+  - component: {fileID: 5357974927908731077}
   m_Layer: 0
   m_Name: Kaalu
   m_TagString: Untagged
@@ -639,9 +640,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: b4606e541b97ce84bbdeb1cd2e4a85b0, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: 906e97c43c6ff6b409208949ac82d6d8, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 80
   hitPoints: 10
+--- !u!65 &5357974927908731077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2984197666984066584}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.748315, y: 2.8570216, z: 12.959621}
+  m_Center: {x: 0, y: -0.00000023841858, z: 0.0000011920929}
 --- !u!1 &2995923318555914280
 GameObject:
   m_ObjectHideFlags: 0

@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 8555839769795567429}
   - component: {fileID: 5719728439542755388}
   - component: {fileID: 4952566688080563449}
+  - component: {fileID: -625907376285473509}
   m_Layer: 0
   m_Name: Yagnyass
   m_TagString: Untagged
@@ -585,9 +586,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: b4606e541b97ce84bbdeb1cd2e4a85b0, type: 3}
   hitVFX: {fileID: 3200836327345539238, guid: 906e97c43c6ff6b409208949ac82d6d8, type: 3}
-  parent: {fileID: 0}
   scorePerHit: 50
   hitPoints: 4
+--- !u!65 &-625907376285473509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317754936338217745}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.651424, y: 1.7536123, z: 12.358537}
+  m_Center: {x: 0, y: -0.0000010728836, z: 0.000006198883}
 --- !u!1 &2801907382029908593
 GameObject:
   m_ObjectHideFlags: 0

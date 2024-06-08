@@ -605,6 +605,7 @@ GameObject:
   - component: {fileID: 4525043014627000932}
   - component: {fileID: 5860736474349378842}
   - component: {fileID: 1308030151525182664}
+  - component: {fileID: -6850988818989272241}
   m_Layer: 0
   m_Name: Laalu
   m_TagString: Untagged
@@ -715,6 +716,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &-6850988818989272241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619344005423585431}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.214741, y: 3.4655335, z: 13.562565}
+  m_Center: {x: 0, y: -0.000000834465, z: -0.000006914139}
 --- !u!1 &4669429629771702135
 GameObject:
   m_ObjectHideFlags: 0
